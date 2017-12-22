@@ -1,6 +1,6 @@
 {
     "name": "angular-http-request-loader",
-    "description": "Loader for each http request in angular js",
+    "description": "Loader on each http request in angular js",
     "main": [
         "dist/angular-http-request-loader.js",
         "dist/angular-http-request-loader.css"

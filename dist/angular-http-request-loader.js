@@ -1,7 +1,7 @@
 /* angular-http-request-loader - v1.0.2 by Nikhil Rane - 2017-12-22 */
 
 
-angular.module("http.request.loader", [])
+angular.module("angular.http.request.loader", [])
 .directive('httpRequestLoader', ['$http', function($http) {
     return {
       restrict: 'E',

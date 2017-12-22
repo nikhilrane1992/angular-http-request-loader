@@ -15,7 +15,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.nikhilrane.com/" />
     <meta property="og:site_name" content="Nikhil Rane" />
-    <link rel="stylesheet" href="dist/angular-http-request-loader.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="dist/angular-http-request-loader.min.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
     <style>
     [ng\:cloak],
@@ -49,22 +49,23 @@
 <script type="text/javascript" src="dist/angular-http-request-loader.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
 <script>
-    angular.module('App', [
-    'http.request.loader'
-])
+angular.module('App', [
+        'angular.http.request.loader'
+    ])
 
-.controller('MainCtrl', function($scope, $http) {
-    console.log("MainCtrl Loads");
-    $scope.loadContaint = function() {
-        $http.get('https://reqres.in/api/users?page=2').
-        then(function(response) {
-            console.log("Done");
-          },
-          function(data, status, headers, config) {
-            console.log("Error");
-          }
-        )
-      }
-});
+    .controller('MainCtrl', function($scope, $http) {
+        console.log("MainCtrl Loads");
+        $scope.loadContaint = function() {
+            $http.get('https://reqres.in/api/users?page=2').
+            then(function(response) {
+                    console.log("Done");
+                },
+                function(data, status, headers, config) {
+                    console.log("Error");
+                }
+            )
+        }
+    });
 </script>
+
 </html>

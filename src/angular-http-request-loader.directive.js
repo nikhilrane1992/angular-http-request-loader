@@ -1,5 +1,5 @@
 
-angular.module("http.request.loader", [])
+angular.module("angular.http.request.loader", [])
 .directive('httpRequestLoader', ['$http', function($http) {
     return {
       restrict: 'E',
