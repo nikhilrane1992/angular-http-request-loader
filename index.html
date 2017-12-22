@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="App">
+
+<head>
+    <meta charset="utf-8">
+    <title>AngularJs Http Request Loader - Nikhil Rane</title>
+    <meta name="author" content="Nikhil Rane">
+    <meta name="description" content="I have 3 Years and 2 Months experience in Software Development. I have completed my Bachelor of Engineering in Computer Engineering and MBA in System Management.">
+    <meta name="Robots" content="ALL,INDEX">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta property="og:title" content="Nikhil Rane" />
+    <meta property="og:description" content="I have 3 Years and 2 Months experience in Software Development. I have completed my Bachelor of Engineering in Computer Engineering and MBA in System Management." />
+    <meta property="og:image" content="http://nikhilrane.com/assets/images/profile.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.nikhilrane.com/" />
+    <meta property="og:site_name" content="Nikhil Rane" />
+    <link rel="stylesheet" href="dist/angular-http-request-loader.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <style>
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak {
+        display: none !important;
+    }
+    </style>
+</head>
+
+<body ng-cloak>
+    <http-request-loader></http-request-loader>
+    <article ng-controller="MainCtrl">
+        <header>
+            <div>
+                <h1>angular-http-request-loader</h1>
+                <h2>Page Loader for each http request</h2>
+            </div>
+            <a href="https://github.com/nikhilrane1992/angular-http-request-loader"><img style="position: absolute; top: 0; right: 0; border: 0;" src="src/images/fork_me_on_github.png" alt="Fork me on GitHub"></a>
+        </header>
+        <section>
+            <button class="btn btn-primary" ng-click="loadContaint()">Load Data</button>
+        </section>
+    </article>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+<script type="text/javascript" src="dist/angular-http-request-loader.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script>
+    angular.module('App', [
+    'http.request.loader'
+])
+
+.controller('MainCtrl', function($scope, $http) {
+    console.log("MainCtrl Loads");
+    $scope.loadContaint = function() {
+        $http.get('https://reqres.in/api/users?page=2').
+        then(function(response) {
+            console.log("Done");
+          },
+          function(data, status, headers, config) {
+            console.log("Error");
+          }
+        )
+      }
+});
+</script>
+</html>

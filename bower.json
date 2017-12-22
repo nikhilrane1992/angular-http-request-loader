@@ -1,0 +1,32 @@
+{
+    "name": "angular-http-request-loader",
+    "description": "Loader for each http request in angular js",
+    "main": [
+        "dist/angular-http-request-loader.js",
+        "dist/angular-http-request-loader.css"
+    ],
+    "authors": [
+        "Nikhil Rane"
+    ],
+    "license": "",
+    "keywords": [
+        "angularjs",
+        "javascript",
+        "loader",
+        "http-request-loader",
+        "loader",
+        "load",
+        "animation",
+        "loading bar",
+        "http",
+        "request loader"
+    ],
+    "homepage": "https://github.com/nikhilrane1992/angular-http-request-loader",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
