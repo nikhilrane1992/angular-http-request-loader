@@ -1,7 +1,7 @@
 # angular-http-request-loader
 Loader on each http request in angularjs
 
-### [DEMO](https://github.com/nikhilrane1992/angular-http-request-loader)
+### [DEMO](https://nikhilrane1992.github.io/angular-http-request-loader/)
 
 ### Getting started
 Download it via github, npm or via bower:
