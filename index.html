@@ -17,6 +17,7 @@
     <meta property="og:site_name" content="Nikhil Rane" />
     <link rel="stylesheet" href="dist/angular-http-request-loader.min.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
     <style>
     [ng\:cloak],
     [ng-cloak],
@@ -26,27 +27,159 @@
     .x-ng-cloak {
         display: none !important;
     }
+
+    a,
+    a:focus,
+    a:hover {
+        color: #fff;
+    }
+
+    .btn-default,
+    .btn-default:hover,
+    .btn-default:focus {
+        color: #333;
+        text-shadow: none;
+        /* Prevent inheritence from `body` */
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+
+    html,
+    body {
+        background: url(src/images/background.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        height: 100%;
+        background-color: #060;
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    }
+
+    .site-wrapper {
+        display: table;
+        width: 100%;
+        height: 100%;
+        /* For at least Firefox */
+        min-height: 100%;
+        -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+        box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    }
+
+    .site-wrapper-inner {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .cover-container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* Padding for spacing */
+
+    .inner {
+        padding: 30px;
+    }
+
+    .masthead-brand {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .masthead-nav>li {
+        display: inline-block;
+    }
+
+    .masthead-nav>li+li {
+        margin-left: 20px;
+    }
+
+    .masthead-nav>li>a {
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        /* IE8 proofing */
+        color: rgba(255, 255, 255, .95);
+        border-bottom: 2px solid transparent;
+    }
+
+    .masthead-nav>li>a:hover,
+    .masthead-nav>li>a:focus {
+        background-color: transparent;
+        border-bottom-color: #a9a9a9;
+        border-bottom-color: rgba(255, 255, 255, .25);
+    }
+
+    .masthead-nav>.active>a,
+    .masthead-nav>.active>a:hover,
+    .masthead-nav>.active>a:focus {
+        color: #fff;
+        border-bottom-color: #fff;
+    }
+
+    .cover {
+        padding: 0 20px;
+    }
+
+    .cover .btn-lg {
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+
+    .mastfoot {
+        color: #999;
+        /* IE8 proofing */
+        color: rgba(255, 255, 255, .5);
+    }
     </style>
 </head>
-<body ng-cloak>
+
+<body ng-cloak ng-controller="MainCtrl">
+    <a href="https://github.com/nikhilrane1992/angular-http-request-loader"><img style="position: absolute; top: 0; right: 0; border: 0;" src="src/images/fork_me_on_github.png" alt="Fork me on GitHub"></a>
     <http-request-loader></http-request-loader>
-    <article ng-controller="MainCtrl">
-        <header>
-            <div>
-                <h1>angular-http-request-loader</h1>
-                <h2>Page Loader for each http request</h2>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">AngularJs Http Request Loader</h3>
+                        <ul class="nav masthead-nav">
+                            <li class="active"><a href=" http://www.nikhilrane.com " target="_blank "><i class="fa fa-globe fa-2x" aria-hidden="true "></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/nikhil-rane-63ab0970 " target="_blank "><i class="fa fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="https://github.com/nikhilrane1992 " target="_blank "><i class="fa fa-github-alt fa-2x"></i></a></li>
+                            <li><a href="https://stackoverflow.com/users/4268976/nikhil-rane " target="_blank "><i class="fa fa-stack-overflow fa-2x"></i></a></li>
+                            <li><a href="https://plus.google.com/u/0/110141811040284557270 " target="_blank "><i class="fa fa-google-plus fa-2x"></i></a></li>
+                            <li><a href="https://www.facebook.com/nikhilrane1992 " target="_blank "><i class="fa fa-facebook-official fa-2x"></i></a></li>
+                            <li><a href="https://twitter.com/nik4urane " target="_blank "><i class="fa fa-twitter fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inner cover ">
+                    <h1 class="cover-heading ">AngularJs Http Request Loader</h1>
+                    <p class="lead ">Page loader for each http request.</p>
+                    <p class="lead "><a class="btn btn-lg btn-info " href="# " ng-click="loadContaint() ">Demo</a></p>
+                </div>
+                <div class="mastfoot ">
+                    <div class="inner ">
+                        <!-- Validation -->
+                        <p><a href=" " target="_blank "><small>Nikhil Rane</small><sup>+</sup></a></p>
+                        <p><a href="https://nikhilrane1992.github.io/angular-http-request-loader/ " target="_blank "><small>Checked with Github</small></a></p>
+                        <p>© 2017 Nikhil Rane ~ <a href="http://nikhilrane.com/ ">Nikhil Rane</a></p>
+                    </div>
+                </div>
             </div>
-            <a href="https://github.com/nikhilrane1992/angular-http-request-loader"><img style="position: absolute; top: 0; right: 0; border: 0;" src="src/images/fork_me_on_github.png" alt="Fork me on GitHub"></a>
-        </header>
-        <section>
-            <button class="btn btn-primary" ng-click="loadContaint()">Load Data</button>
-        </section>
-    </article>
+        </div>
+    </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
-<script type="text/javascript" src="dist/angular-http-request-loader.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js " crossorigin="anonymous "></script>
+<script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js "></script>
+<script type="text/javascript " src="dist/angular-http-request-loader.js "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " crossorigin="anonymous "></script>
 <script>
 angular.module('App', [
         'angular.http.request.loader'
