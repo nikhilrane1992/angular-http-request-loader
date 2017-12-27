@@ -11,14 +11,16 @@ npm install angular-http-request-loader
 bower install --save angular-http-request-loader
 ```
 
-
 Or use it directly from the GitHub CDN:
-```Use this URL in production(html)
+
+1) Use this URL in production(html)
+```html
 <link rel="stylesheet" href="https://cdn.rawgit.com/nikhilrane1992/angular-http-request-loader/00c488f1/dist/angular-http-request-loader.min.css">
 <script type="text/javascript" src="https://cdn.rawgit.com/nikhilrane1992/angular-http-request-loader/00c488f1/dist/angular-http-request-loader.min.js"></script>
 ```
 
-```Use this URL for development(html)
+2) Use this URL for development(html)
+```html
 <link rel="stylesheet" href="https://rawgit.com/nikhilrane1992/angular-http-request-loader/master/dist/angular-http-request-loader.min.css">
 <script type="text/javascript" src="https://rawgit.com/nikhilrane1992/angular-http-request-loader/master/dist/angular-http-request-loader.min.js"></script>
 ```
