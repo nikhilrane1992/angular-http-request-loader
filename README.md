@@ -16,15 +16,12 @@ Or use it directly from the GitHub CDN:
 ```Use this URL in production(html)
 <link rel="stylesheet" href="https://cdn.rawgit.com/nikhilrane1992/angular-http-request-loader/00c488f1/dist/angular-http-request-loader.min.css">
 <script type="text/javascript" src="https://cdn.rawgit.com/nikhilrane1992/angular-http-request-loader/00c488f1/dist/angular-http-request-loader.min.js"></script>
-
-Add the module name to your application dependencies:
-```javascript
-angular.module('app', ['angular-http.request.loader'])
 ```
 
 ```Use this URL for development(html)
 <link rel="stylesheet" href="https://rawgit.com/nikhilrane1992/angular-http-request-loader/master/dist/angular-http-request-loader.min.css">
 <script type="text/javascript" src="https://rawgit.com/nikhilrane1992/angular-http-request-loader/master/dist/angular-http-request-loader.min.js"></script>
+```
 
 Add the module name to your application dependencies:
 ```javascript
