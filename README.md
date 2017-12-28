@@ -34,8 +34,10 @@ angular.module('app', ['angular-http.request.loader'])
 
 Follow this example:
 
-```css
+```html
 <link rel="stylesheet" href="dist/angular-http-request-loader.min.css" media="screen" charset="utf-8">
+
+<script type="text/javascript" src="dist/angular-http-request-loader.min.js"></script>
 ```
 
 ```html
