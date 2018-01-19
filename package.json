@@ -1,5 +1,5 @@
 {
-  "name": "angular-http-request-loader",
+  "name": "Angular Http Request Loader",
   "version": "1.0.3",
   "description": "Loader on each http request in angular js",
   "main": "./dist/angular-http-request-loader.js",
