@@ -1,6 +1,6 @@
 {
   "name": "angular-http-request-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Loader on each http request in angular js",
   "main": "./dist/angular-http-request-loader.js",
   "style": "./dist/angular-http-request-loader.css",
@@ -8,7 +8,8 @@
     "example": "example"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run test"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,7 @@
   ],
   "author": "Nikhil Rane",
   "bugs": {
-    "url": "https://github.com/codekraft-studio/angular-loader/issues"
+    "url": "https://github.com/nikhilrane1992/angular-http-request-loader/issues"
   },
   "homepage": "https://github.com/nikhilrane1992/angular-http-request-loader/issues",
   "devDependencies": {

@@ -1,6 +1,10 @@
 # Angular Http Request Loader
 Loader on each http request in angularjs
 
+[![npm version](https://img.shields.io/npm/v/angular-http-request-loader.svg)](https://www.npmjs.com/package/angular-http-request-loader)
+[![npm downloads](https://img.shields.io/npm/dm/angular-http-request-loader.svg?maxAge=259200)](https://www.npmjs.com/package/angular-http-request-loader)
+[![npm](https://img.shields.io/npm/l/express.svg?maxAge=2592000)](/LICENSE)
+
 ### [DEMO](https://nikhilrane1992.github.io/angular-http-request-loader/)
 
 ### Getting started
@@ -34,8 +38,10 @@ angular.module('app', ['angular-http.request.loader'])
 
 Follow this example:
 
-```css
+```html
 <link rel="stylesheet" href="dist/angular-http-request-loader.min.css" media="screen" charset="utf-8">
+
+<script type="text/javascript" src="dist/angular-http-request-loader.min.js"></script>
 ```
 
 ```html
