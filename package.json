@@ -1,6 +1,6 @@
 {
   "name": "angular-http-request-loader",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Loader on each http request in angular js",
   "main": "./dist/angular-http-request-loader.js",
   "style": "./dist/angular-http-request-loader.css",
@@ -8,8 +8,7 @@
     "example": "example"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npm run test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
